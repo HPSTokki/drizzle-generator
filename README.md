@@ -1,15 +1,15 @@
-# drizzle-gen
+# drizzle-generators
 
 One-shot Drizzle ORM schema table generator. Scaffold a table schema, barrel export, and validators from a single command.
 
 ```bash
-npx drizzle-gen add users -d pg -v zod
+npx drizzle-generators add users -d pg -v zod
 ```
 
 ## Install
 
 ```bash
-npm install --save-dev drizzle-gen
+npm install --save-dev drizzle-generators
 ```
 
 Requires `drizzle-orm` as a peer dependency (with `zod` or `typebox` optional for validator generation).
@@ -19,7 +19,7 @@ Requires `drizzle-orm` as a peer dependency (with `zod` or `typebox` optional fo
 ### Add a table
 
 ```bash
-drizzle-gen add <table> [options]
+drizzle-generators add <table> [options]
 ```
 
 **Options:**
@@ -33,16 +33,16 @@ drizzle-gen add <table> [options]
 **Examples:**
 
 ```bash
-drizzle-gen add users -d pg
-drizzle-gen add posts -d mysql -v zod
-drizzle-gen add items -d sqlite -v
-drizzle-gen add products -d pg -o ./src/db/schema
-drizzle-gen add products                        # infers dialect from drizzle.config.ts
+drizzle-generators add users -d pg
+drizzle-generators add posts -d mysql -v zod
+drizzle-generators add items -d sqlite -v
+drizzle-generators add products -d pg -o ./src/db/schema
+drizzle-generators add products                        # infers dialect from drizzle.config.ts
 ```
 
 ### Generated output
 
-Running `drizzle-gen add users -d pg -v zod` produces:
+Running `drizzle-generators add users -d pg -v zod` produces:
 
 ```
 drizzle/
@@ -55,7 +55,7 @@ drizzle/
 
 ### drizzle.config.ts inference
 
-If you already have a `drizzle.config.ts` in your project, `drizzle-gen` will automatically detect your dialect and output directory — no need to pass `-d` or `-o`:
+If you already have a `drizzle.config.ts` in your project, `drizzle-generators` will automatically detect your dialect and output directory — no need to pass `-d` or `-o`:
 
 ```ts
 // drizzle.config.ts
@@ -67,7 +67,7 @@ export default {
 ```
 
 ```bash
-drizzle-gen add products   # infers dialect: postgresql, out: ./src/db
+drizzle-generators add products   # infers dialect: postgresql, out: ./src/db
 ```
 
 ## Supported dialects

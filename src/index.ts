@@ -12,7 +12,7 @@ const pkg = JSON.parse(
 const program = new Command();
 
 program
-  .name("drizzle-gen")
+  .name("drizzle-generators")
   .description("Declarative Drizzle ORM schema generator")
   .version(pkg.version);
 

@@ -1,10 +1,10 @@
 {
-  "name": "drizzle-gen",
+  "name": "drizzle-generators",
   "version": "1.0.0",
-  "description": "One-shot Drizzle ORM schema table generator — drizzle-gen add <table> -d <dialect>",
+  "description": "One-shot Drizzle ORM schema table generator — drizzle-generators add <table> -d <dialect>",
   "type": "module",
   "bin": {
-    "drizzle-gen": "./dist/cli.mjs"
+    "drizzle-generators": "./dist/cli.mjs"
   },
   "files": [
     "dist"

@@ -73,11 +73,11 @@ export const addCommand = new Command("add")
     "after",
     `
 Examples:
-  drizzle-gen add users -d pg
-  drizzle-gen add posts -d mysql -v zod
-  drizzle-gen add items -d sqlite -v
-  drizzle-gen add products                        (infers dialect from drizzle.config.ts)
-  drizzle-gen add products -d pg -o ./src/db/schema
+  drizzle-generators add users -d pg
+  drizzle-generators add posts -d mysql -v zod
+  drizzle-generators add items -d sqlite -v
+  drizzle-generators add products                        (infers dialect from drizzle.config.ts)
+  drizzle-generators add products -d pg -o ./src/db/schema
 `,
   )
   .action(async (table: string, options: { dialect?: string; validator?: string | boolean; out: string }) => {

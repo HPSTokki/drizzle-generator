@@ -17,9 +17,9 @@
 - [ ] D1
 
 ## Features
-- [ ] `drizzle-gen init` — scaffold full project structure
-- [ ] `drizzle-gen generate` — batch generate all tables from a config file
-- [ ] Custom column type mappings (configurable via `drizzle-gen.config.ts`)
+- [ ] `drizzle-generators init` — scaffold full project structure
+- [ ] `drizzle-generators generate` — batch generate all tables from a config file
+- [ ] Custom column type mappings (configurable via `drizzle-generators.config.ts`)
 - [ ] Casing options (snake_case / camelCase) per table or global
 - [ ] `--dry-run` flag to preview output without writing files
 - [ ] Interactive table builder (guided column-by-column prompts)
