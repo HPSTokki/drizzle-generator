@@ -1,6 +1,6 @@
 {
   "name": "drizzle-generators",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One-shot Drizzle ORM schema table generator — drizzle-generators add <table> -d <dialect>",
   "type": "module",
   "bin": {
