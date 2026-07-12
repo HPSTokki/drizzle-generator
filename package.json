@@ -4,7 +4,7 @@
   "description": "One-shot Drizzle ORM schema table generator — drizzle-generators add <table> -d <dialect>",
   "type": "module",
   "bin": {
-    "drizzle-generators": "./dist/cli.mjs"
+    "drizzle-generators": "./dist/cli.js"
   },
   "files": [
     "dist"
@@ -12,7 +12,7 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
+      "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
     "./package.json": "./package.json"
